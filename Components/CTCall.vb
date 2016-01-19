@@ -33,7 +33,7 @@ Namespace Components
         Private _moduleId As Integer
 
         Public Sub New()
-            CallId = -2
+            CallId = -1
         End Sub
         Public Property CallId() As Integer
             Get
