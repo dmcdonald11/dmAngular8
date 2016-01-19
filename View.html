@@ -1,0 +1,112 @@
+﻿[JavaScript:{ jsname: "AngularJS" }]
+[JavaScript:{ path: "~/DesktopModules/DMAngular8/Resources/js/dnnuclear-dnn.js"}]
+[JavaScript:{ path: "~/DesktopModules/DMAngular8/Resources/js/01-item-controllers-debug.js"}]
+[JavaScript:{ path: "~/DesktopModules/DMAngular8/Resources/js/03-item-app-debug.js"}]
+
+
+<div  dnnuclear-app="myCTLApp" id="[ModuleContext:ModuleId]"  data-modulepath="/Desktopmodules/DMAngular8/" 
+      ng-controller="mainController as vm">
+
+        <div ng-switch on="vm.show">
+            <!--@* Default View Begin *@-->
+            <div ng-switch-when="default">
+                <p><a href="#a" class="btn btn-primary " ng-click="vm.addCalls()">Add New Calls</a></p>
+                <table class="table table-striped ">
+                    <tr>
+                        <td align="Center">Call ID</td>
+                        <td>Call Type</td>
+                        <td>Caller Name</td>
+                        <td>Caller Address</td>
+                        <td>Caller City</td>
+                        <td>Utility Type</td>
+                        <td></td>
+                    </tr>
+                    <tr ng-repeat="call in vm.calls">
+                        <td align="Center">{{call.CallId}}</td>
+                        <td>{{call.CallType}}</td>
+                        <td>{{call.CallerName}}</td>
+                        <td>{{call.CallerAddress}}</td>
+                        <td>{{call.CallerCity}}</td>
+                        <td>{{call.UtilityType}}</td>
+                        <td class="text-right ">
+                            <button class="btn btn-primary ">E</button>
+                            <button class="btn btn-danger ">X</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--@* End Default View  *@
+
+            @* Add New Call Veiw Begin *@-->
+            <div ng-switch-when="new">
+                <p>  Add New Caller! </p>
+                <table style="width:50%" class="table table-striped">
+                    <tr>
+                        <td align="left">Caller Name</td>
+                        <td><input type="text" size="200" required ng-model="newCall.CallerName" /></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Caller Address</td>
+                        <td><input type="text" size="200" required ng-model="newCall.CallerAddress" /></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Caller City</td>
+                        <td><input type="text" size="200" required ng-model="newCall.CallerCity" /></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Caller Region</td>
+                        <td>
+                            <select ng-model="regionList" class="RegionId">
+                                <option ng-repeat="region in vm.regions" value="{{region.RegionId}}">{{region.RegionDesc}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Utility Type</td>
+                        <td>
+                            <select ng-model="utilityList" class="UtilityId">
+                                <option ng-repeat="utiltype in vm.utilTypes" value="{{utiltype.UtilityTypeId}}">{{utiltype.UtilityTypeDesc}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Call Type</td>
+                        <td>
+                            <select ng-model="calltypeList" class="CallTypeId">
+                                <option ng-repeat="calltype in vm.callTypes" value="{{calltype.UtilityTypeId}}">{{calltype.UtilityTypeDesc}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">CallBack Number</td>
+                        <td><input type="text" size="200" required ng-model="newCall.CallBackNumber" /></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Comments</td>
+                        <td><textarea rows="4" cols="50" required ng-model="newCall.Comments"></textarea> </td>
+                    </tr>
+                </table>
+
+                <button class="btn btn-primary ">Save</button>
+                <button class="btn btn-warning " ng-click="vm.Cancel()">Cancel</button>
+            </div>
+            <!--@* Add New Call View End *@-->
+        </div>
+
+    </div>
+
+</div>
+
+<div>
+
+    <h2>Hello DNN World!!</h2>
+
+</div>
+
+<!--<script language="javascript" type="text/javascript" >
+    jQuery(function ($) {
+        var moduleId = parseInt("[ModuleContext:ModuleId]");
+        var $dnnuclear = $dnnuclear || {};
+        $dnnuclear.moduleId = moduleId;
+    });
+</script>-->

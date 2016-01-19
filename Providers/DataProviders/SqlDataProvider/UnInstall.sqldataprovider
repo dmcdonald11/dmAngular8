@@ -1,0 +1,7 @@
+﻿IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}DMAngular8_Items]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}DMAngular8_Items]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}dmAngular8_CTCalls]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}dmAngular8_CTCalls]
+GO

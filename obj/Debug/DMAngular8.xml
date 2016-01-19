@@ -1,0 +1,247 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DMAngular8
+</name>
+</assembly>
+<members>
+<member name="T:NWSC.Modules.DMAngular8.Components.FeatureController">
+ <summary>
+ The Controller class for DMAngular8
+ 
+ The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+ DotNetNuke will poll this class to find out which Interfaces the class implements. 
+ 
+ The IPortable interface is used to import/export content from a DNN module
+ 
+ The ISearchable interface is used by DNN to index the content of a module
+ 
+ The IUpgradeable interface allows module developers to execute code during the upgrade 
+ process for a module.
+ 
+ Below you will find stubbed out implementations of each, uncomment and populate with your own data
+ </summary>
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Services.Controllers.homeController.HelloWorld">
+ <summary>
+ API that returns Hello world
+[baseURL]/CTCall/test
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Services.Controllers.homeController.AddCTCall(NWSC.Modules.DMAngular8.Components.CTCall)">
+ <summary>
+ API that creates a new CTCall in the CTCall list
+[baseURL]/CTCall/new
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Services.Controllers.homeController.DeleteCTCall(NWSC.Modules.DMAngular8.Components.CTCall)">
+ <summary>
+ API that deletes an CTCall from the CTCall list
+[baseURL]/CTCall/delete
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Services.Controllers.homeController.UpdateCTCall(NWSC.Modules.DMAngular8.Components.CTCall)">
+ <summary>
+ API that creates a new CTCall in the CTCall list
+[baseURL]/CTCall/edit
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Services.Controllers.homeController.GetCTCalls">
+ <summary>
+ API that returns an CTCall list
+[baseURL]/home/List
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:NWSC.Modules.DMAngular8.Settings">
+ -----------------------------------------------------------------------------
+ <summary>
+ The Settings class manages Module Settings
+ 
+ Typically your settings control would be used to manage settings for your module.
+ There are two types of settings, ModuleSettings, and TabModuleSettings.
+ 
+ ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+ 
+ TabModuleSettings apply only to the current module on the current page, if you copy that module to
+ another page the settings are not transferred.
+ 
+ If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+ 
+ Below we have some examples of how to access these settings but you will need to uncomment to use.
+ 
+ Because the control inherits from DMAngular8SettingsBase you have access to any custom properties
+ defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Settings.LoadSettings">
+ -----------------------------------------------------------------------------
+ <summary>
+ LoadSettings loads the settings from the Database and displays them
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Settings.UpdateSettings">
+ -----------------------------------------------------------------------------
+ <summary>
+ UpdateSettings saves the modified settings to the Database
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:NWSC.Modules.DMAngular8.Edit">
+ <summary>
+ The View class displays the content
+ 
+ Typically your view control would be used to display content or functionality in your module.
+ 
+ View may be the only control you have in your project depending on the complexity of your module
+ 
+ Because the control inherits from DMAngular8ModuleBase you have access to any custom properties
+ defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+ 
+ </summary>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._lblName">
+<summary>
+lblName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._txtName">
+<summary>
+txtName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._lblDescription">
+<summary>
+lblDescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._txtDescription">
+<summary>
+txtDescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._lblAssignedUser">
+<summary>
+lblAssignedUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._ddlAssignedUser">
+<summary>
+ddlAssignedUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._btnSubmit">
+<summary>
+btnSubmit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.Edit._btnCancel">
+<summary>
+btnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:NWSC.Modules.DMAngular8.Edit.Page_Load(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Page_Load runs when the control is loaded
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:NWSC.Modules.DMAngular8.View">
+ <summary>
+ The View class displays the content
+ 
+ Typically your view control would be used to display content or functionality in your module.
+ 
+ View may be the only control you have in your project depending on the complexity of your module
+ 
+ Because the control inherits from DMAngular8ModuleBase you have access to any custom properties
+ defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+ 
+ </summary>
+</member>
+<member name="F:NWSC.Modules.DMAngular8.View._rptItemList">
+<summary>
+rptItemList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:NWSC.Modules.DMAngular8.View.Page_Load(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Page_Load runs when the control is loaded
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:NWSC.Modules.DMAngular8.View.ModuleActions">
+ -----------------------------------------------------------------------------
+ <summary>
+ Registers the module actions required for interfacing with the portal framework
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+</members>
+</doc>

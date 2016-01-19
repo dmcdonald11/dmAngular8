@@ -1,0 +1,8 @@
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\bin\DMAngular8.dll.config
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\bin\DMAngular8.dll
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\bin\DMAngular8.pdb
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\bin\DMAngular8.xml
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\DesktopModules\DMAngular8\obj\Debug\DMAngular8.vbprojResolveAssemblyReference.cache
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\DesktopModules\DMAngular8\obj\Debug\DMAngular8.dll
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\DesktopModules\DMAngular8\obj\Debug\DMAngular8.xml
+C:\Websites\dnndev.me\Version\v8.0.0CPT7Dev1\DesktopModules\DMAngular8\obj\Debug\DMAngular8.pdb
